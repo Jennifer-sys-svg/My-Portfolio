@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+ 
+ /* Animations */
+ .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in.active {
+    opacity: 1;
+}
+
+.slide-in-left {
+    transform: translateX(-50px);
+    transition: transform 0.8s ease-in-out;
+}
+.slide-in-left.active {
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    transform: translateX(50px);
+    transition: transform 0.8s ease-in-out;
+}
+.slide-in-right.active {
+    transform: translateX(0);
+}
+
+.scale-up {
+    transform: scale(0.8);
+    transition: transform 0.6s ease-in-out;
+}
+.scale-up.active {
+    transform: scale(1);
+}
+
+

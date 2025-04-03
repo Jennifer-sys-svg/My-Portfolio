@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags for character set and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Personal Portfolio</title>
+    
+    <!-- Google Fonts - Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External resources -->
+    <!-- Tailwind CSS for styling and animations -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Main body with black background and white text -->
+<body class="bg-black text-white">
+    
+    <!-- Hero Section -->
+    <section class="page-section flex justify-center items-center min-h-screen">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+            <!-- Left column with text content -->
+            <div class="md:w-1/2 text-center md:text-left space-y-4">
+                <h1 class="text-4xl font-bold fade-in">Welcome to my <span class="text-gray-400">Personal Website Portfolio</span></h1>
+                <!-- Styled button with hover effects -->
+                <button class="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-semibold rounded-full py-3 px-6 shadow-lg transition-all duration-300 transform hover:scale-105 slide-in-left">
+                    Jennifer Mokoenyema / UX Designer / Aspiring Full Stack Developer
+                </button>
+                <!-- Resume link with arrow icon -->
+                <a href="Assets/ATS Resume.pdf" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-200 slide-in-left">
+                    View my Resume <span class="ml-2">&rarr;</span>
+                </a>
+            </div>
+            
+            <!-- Right column with profile image -->
+            <div class="md:w-1/2 flex justify-center scale-up">
+                <img src="IMAGES/Screenshot%202025-03-27%20163339.png" alt="Jennifer Mokoenyema" class="rounded-lg shadow-lg max-w-full h-auto" style="max-height: 400px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section break divider -->
+    <div class="section-break"></div>
+
+    <!-- About Me Section -->
+    <section class="page-section">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Left column with text content -->
+            <div class="text-left space-y-6">
+                <h1 class="text-5xl font-bold fade-in">Who is <span class="text-purple-400">Jennifer?</span></h1>
+                <p class="text-xl text-gray-300 slide-in-left">
+                    A dedicated and highly motivated aspiring Full Stack Developer and a newly qualified UX Designer, excited to transition from the background in Nursing and Phlebotomy into the world of Software Development. I have always been passionate about creating things that make life easier for people, and now I get to do that through coding and design. 
+                </p>
+            </div>
+            
+            <!-- Right column with image -->
+            <div class="space-y-4 slide-in-right">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="IMAGES/pexels-karlsolano-9454347.jpg" alt="Jennifer Mokoenyema" class="rounded-lg shadow-lg max-w-full h-auto" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section break divider -->
+    <div class="section-break"></div>
+
+    <!-- Background Section -->
+    <section class="page-section">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div class="text-left space-y-6">
+                <h1 class="text-5xl font-bold fade-in">My Background</h1>
+                
+                <!-- Education subsection -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold text-gray-300 slide-in-left">Education</h2>
+                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-400 slide-in-left">
+                        <li>Power Learn Project (PLP) - Software Development Scholarship (Ongoing)</li>
+                        <li>Certificate in UX Design (DSM)</li>
+                        <li>Complete Web & Mobile Designer:UI/UX & Figma (Udemy)</li>
+                        <li>Military Veteran (SANDF)</li>
+                        <li>Nursing & Phlebotomy Certification</li>
+                    </ul>
+                </div>
+                
+                <!-- Work Experience subsection -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold text-gray-300 slide-in-left">Work Experience</h2>
+                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-400">
+                        <li>Healthcare Professional (Former Role)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section break divider -->
+    <div class="section-break"></div>
+
+    <!-- Contact Section -->
+    <section class="page-section text-center">
+        <h1 class="text-5xl font-bold fade-in">Reach Out To Me</h1>
+        <!-- Social media/contact links -->
+        <div class="flex justify-center space-x-6 mt-6">
+            <a href="https://github.com/yourgithub" target="_blank" class="text-gray-400 text-3xl hover:text-white transition-all">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:your.email@example.com" class="text-gray-400 text-3xl hover:text-white transition-all">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="text-gray-400 text-3xl hover:text-white transition-all">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="tel:+1234567890" class="text-gray-400 text-3xl hover:text-white transition-all">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- JavaScript for scroll animations -->
+    <script>
+        function revealOnScroll() {
+            // Select all elements with animation classes
+            const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-up');
+            
+            // Check each element's position relative to viewport
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                // Add 'active' class when element is in view
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                } else {
+                    element.classList.remove('active');
+                }
+            });
+        }
+        
+        // Add scroll event listener and run once on page load
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+    </script>
+</body>
+</html>
